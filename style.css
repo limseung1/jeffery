@@ -14,7 +14,7 @@
   
   body {
     background-color: #f4f4f4;
-    color: var(--text-bright);
+    color: var(--text-dark);
     font-size: 1.1rem;
   }
   p {
@@ -23,7 +23,7 @@
   }
   a {
     text-decoration: none !important;
-    color: var(--text-bright);
+    color: var(--text-dark);
   }
   
   ul {
@@ -42,13 +42,38 @@
     outline:none !important;
   }
 
+/* Selection Panel */
 
+.selection{
+  margin-top: 1rem;
+  text-align: center;
+  display:grid;
+  height:13rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 
-  .samples {
-    margin-top: 1rem;
-  }
-  .samples img{
-    height: 350px;
-    width: 350px;
-    padding: 0.5rem 0.5rem;
-  };
+.selection a{
+  padding: 0.5rem 2rem;
+  margin: 0rem 1rem;
+  cursor: pointer;
+}
+
+.panel-item{
+  background-color: #ececec;
+}
+
+.panel-item:hover{
+  background-color: #d4d4d4;
+}
+
+/* Selection Show case */
+.samples {
+  margin-top: 1rem;
+}
+.samples img{
+  height: 350px;
+  width: 350px;
+  padding: 0.5rem 0.5rem;
+};
+
