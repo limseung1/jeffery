@@ -2,6 +2,7 @@
 // Execution
 main()
 
+console.log("ran")
 
 async function read(filename) {
     // read csv file and parse its info into folder where each link belongs, link.
