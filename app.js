@@ -20,6 +20,7 @@ async function read(filename) {
 
         lol.push(link)
     });
+    console.log(lol)
     return lol
 }
 
@@ -66,7 +67,6 @@ function update_showcase_contents() {
 
     // Filter "data" for folder named : 'search_name' then Extract all links with key word search_name of folder
     const links = extract_filtered_links(search_name)
-    console.log(links)
 
     // Create and update link tags
     create_elements_gallery(links)
