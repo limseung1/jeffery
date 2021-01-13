@@ -2,7 +2,6 @@
 // Execution
 main()
 
-console.log("ran")
 
 async function read(filename) {
     // read csv file and parse its info into folder where each link belongs, link.
@@ -26,7 +25,7 @@ async function read(filename) {
 
 async function main(){
     // Read in the data
-    data = await read("picture_links.csv")
+    data = await read("test1.csv")
 
     // 1. Update the selection control panel
     update_selection_panel(data)
